@@ -1,0 +1,149 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "SMHI Sans", Verdana, Arial, sans-serif;
+}
+
+/* Header and form styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(19, 191, 228), #c9f9fd);
+    padding: 10px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#searchButton {
+    width: 80px;
+    height: 35px;
+    background-color: #13bfe4;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+#searchButton:hover {
+    background-color: #0f9bbd;
+}
+
+/* Metric unit switch button styling */
+#unitSwitch {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#unitSwitch:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.containerHeader,
+.weatherDay {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+#containerHeaderFirstDiv,
+.day {
+    display: flex;
+    gap: 20px;
+    flex: 2;
+    align-items: center;
+    padding: 10px;
+}
+
+.containerHeader > div {
+    flex-direction: column;
+}
+
+.containerHeader > div,
+.temp,
+.rain,
+.wind,
+.sunTime,
+.uvIndex {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+}
+
+.temp,
+.rain,
+.wind,
+.sunTime,
+.uvIndex {
+    align-items: center;
+}
+
+.weatherDay {
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px grey;
+    background-color: #d9fcfe;
+}
+
+.weatherImg {
+    height: 60px;
+}
+
+.tempImg {
+    height: 40px;
+}
+
+.rainImg,
+.uvIndexImg {
+    height: 30px;
+}
+
+.windImg {
+    height: 25px;
+}
+
+.sunRiseImg {
+    height: 35px;
+}
+
+.dayDate > h3 {
+    font-size: 30px;
+}
+
+.dayDate > h4 {
+    font-weight: normal;
+}
+
+.tempData > p:first-child,
+.rain > p,
+.windData > p:first-child,
+.sunTimeData > p:first-child,
+.uvIndex > p {
+    font-weight: bold;
+    font-size: 18px;
+}
